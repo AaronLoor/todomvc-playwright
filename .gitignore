@@ -54,3 +54,8 @@ out/
 # Coverage reports (if using code coverage tools like Istanbul/nyc)
 coverage/
 .nyc_output/
+
+# Playwright
+/playwright-report/
+/blob-report/
+/playwright/.cache/
