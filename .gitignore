@@ -1,0 +1,56 @@
+# Node Dependencies
+# These are installed packages. Anyone cloning the repo can regenerate them using 'npm install' or 'yarn install'.
+# They take up a lot of space and shouldn't be version controlled.
+node_modules/
+
+# Playwright test results and reports
+# These are generated artifacts from test runs, not source code.
+test-results/
+playwright-report/
+blob-report/
+junit-report/
+playwright/.cache/
+
+# Playwright trace files (often large, generated during debugging)
+traces/
+
+# Playwright downloaded browsers (managed by Playwright install)
+# Usually stored outside the project, but good to include if stored locally.
+# ms-playwright/ # Example path, adjust if needed
+
+# Environment variables
+# These files often contain sensitive information like API keys or passwords.
+# They should NEVER be committed to the repository. Use a .env.example template instead.
+.env
+*.env
+.env.*
+!.env.example # Use ! to explicitly track an example file if you have one
+
+# Logs
+# Log files generated during development or execution.
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Operating system generated files
+# Files automatically created by macOS and Windows for folder display.
+.DS_Store
+Thumbs.db
+
+# Editor/IDE configuration files
+# User-specific settings for editors like VS Code or JetBrains IDEs.
+# Optional, but generally recommended to keep editor config out of the repo unless it's team-standardized.
+.vscode/
+.idea/
+
+# Build output (if you compile TypeScript or bundle code)
+dist/
+build/
+out/
+
+# Coverage reports (if using code coverage tools like Istanbul/nyc)
+coverage/
+.nyc_output/
